@@ -18,7 +18,7 @@ export function WalletProvider({ children = null as any }) {
   const { endpoint } = useConnectionConfig();
   const [providerUrl, setProviderUrl] = useLocalStorageState(
     "walletProvider",
-    "https://www.sollet.io"
+    "https://www.mathwallet.org"
   );
   const wallet = useMemo(() => {
     console.log("use new provider:", providerUrl, " endpoint:", endpoint);

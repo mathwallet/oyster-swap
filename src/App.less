@@ -31,13 +31,15 @@ body {
 }
 
 .App-Bar {
-  display: grid;
-  grid-template-columns: 1fr 120px;
-  -webkit-box-pack: justify;
+  // display: grid;
+  // grid-template-columns: 1fr 120px;
+  // -webkit-box-pack: justify;
+  display: flex;
   justify-content: space-between;
   -webkit-box-align: center;
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
   top: 0px;
   position: relative;
@@ -79,6 +81,7 @@ body {
   -webkit-box-align: center;
   align-items: center;
   width: fit-content;
+  margin-bottom: 10px;
 }
 
 .App-Bar-right {
@@ -217,5 +220,12 @@ body {
 @media only screen and (max-width: 600px) {
   .exchange-card {
     width: 360px;
+  }
+  .App-Bar{
+    padding: 1rem 0.2rem;
+  }
+  .wallet-wrapper{
+    flex-wrap: wrap-reverse;
+    justify-content: center;
   }
 }

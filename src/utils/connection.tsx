@@ -78,7 +78,7 @@ export function ConnectionProvider({ children = undefined as any }) {
     // fetch token files
     window
       .fetch(
-        `https://raw.githubusercontent.com/solana-labs/token-list/main/src/tokens/${env}.json`
+        `https://medishares-cn.oss-cn-hangzhou.aliyuncs.com/assets/solana-labs/tokens/${env}.json`
       )
       .then((res) => {
         return res.json();
